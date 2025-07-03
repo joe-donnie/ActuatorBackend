@@ -45,7 +45,7 @@ connectDatabase();
 const app = express();
 
 app.use(cors({
-  origin: "https://actuatorproject-i5v1pc889-joe-donnies-projects.vercel.app", // your frontend
+  origin: "https://actuator-project-oszkghald-joe-donnies-projects.vercel.app", // your frontend
   credentials: true,
 }));
 app.options("*", cors()); // handle preflight requests

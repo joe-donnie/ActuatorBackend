@@ -15,8 +15,8 @@
     const app = express();
 
     app.use(cors({
-  origin: "*",
-  credentials: true,
+  Origin: "https://actuator-project-tawny.vercel.app/login",
+  
 }));
     app.use(express.json());
 

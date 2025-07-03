@@ -1,4 +1,4 @@
-// import jwt from 'jsonwebtoken';
+import jwt from 'jsonwebtoken';
 import userModels from '../models/userModels.js';
 
 const generateToken = (user) => {

@@ -14,10 +14,12 @@
 
     const app = express();
 
-    app.use(cors({
-  Origin: "https://actuator-project-tawny.vercel.app/login",
+//     app.use(cors({
+//     res.setHeader('Access-Control-Allow-Origin', '*'); 
   
-}));
+// }));
+app.use(cors());
+
     app.use(express.json());
 
     app.use('/api/users', userRouter);

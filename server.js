@@ -14,11 +14,12 @@
 
     const app = express();
 
-//     app.use(cors({
-//     res.setHeader('Access-Control-Allow-Origin', '*'); 
-  
-// }));
-app.use(cors());
+   app.use(
+  cors({
+    origin: "https://actuatorprojectksb.vercel.app", // ✅ allow only this origin
+    credentials: true, // if you're using cookies or authorization headers
+  })
+);
 
     app.use(express.json());
 

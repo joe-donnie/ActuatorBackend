@@ -14,9 +14,8 @@
 
     const app = express();
 
-   app.use(
-  cors({
-    origin: "https://actuatorprojectksb.vercel.app", // ✅ allow only this origin
+   app.use(cors({
+    origin: "*", // ✅ allow only this origin
     credentials: true, // if you're using cookies or authorization headers
   })
 );

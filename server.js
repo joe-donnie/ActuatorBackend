@@ -27,10 +27,5 @@
     app.use('/api/valve', valveRouter);
     app.use('/api/data', actuatorDataRouter);
     app.use('/api/form', formRouter);
-    
-    app.get("/", (req, res) => {
-  res.send("Actuator Backend is live ✅");
-});
-
-// Vercel expects this export
-export default app;
+    const PORT = 5000;
+    app.listen(PORT, () => console.log(`Server started on ${PORT} `));
